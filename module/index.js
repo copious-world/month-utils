@@ -21,7 +21,7 @@ export function in_interval(instant,t_start,t_end) {
 
 // next_midnight -> timestamp
 export function next_midnight(local_clock_date) {
-    let lc_time = new Date(local_clock_date)
+    let lc_time = local_clock_date.getTime()
     let next_time = lc_time + TWENTY_FOUR
     let nextDay = new Date(next_time)
     let midnight_tmwr = new Date(nextDay.getFullYear(),nextDay.getMonth(),nextDay.getDate())
@@ -30,7 +30,7 @@ export function next_midnight(local_clock_date) {
 
 // prev_midnight -> timestamp
 export function prev_midnight(local_clock_date) {
-    let lc_time = new Date(local_clock_date)
+    let lc_time = local_clock_date.getTime()
     let startDay = new Date(lc_time)
     let midnight_lastnight = new Date(startDay.getFullYear(),startDay.getMonth(),startDay.getDate())
     return midnight_lastnight.getTime()
@@ -208,7 +208,7 @@ export function next_month_start(a_time) {
 // first_day_of_relative_month_ts -> timestamp
 export function first_day_of_relative_month_ts(timestamp,mo_offset) {
     let a_date = new Date(timestamp)
-    return first_day_of_relative_month(a_date)
+    return first_day_of_relative_month(a_date,mo_offset)
 }
 
 
