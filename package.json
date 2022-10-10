@@ -1,6 +1,6 @@
 {
   "name": "month-utils",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "Time slot scheduling classes relative to months as storage units",
   "module": "./dist/index.mjs",
   "main": "index.js",
@@ -22,12 +22,16 @@
   },
   "homepage": "https://github.com/copious-world/month-utils#readme",
   "keywords": [
-    "events",
+    "months", "dates",
     "calendar",
-    "schedule"
+    "schedule", "utility"
   ],
   "author": "R. Leddy",
   "license": "MIT",
+  "funding": {
+    "type" : "GitHub Sponsors",
+    "url" : "https://github.com/sponsors/copious-world"
+  },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^9.0.0",
     "rollup": "^2.0.0",
