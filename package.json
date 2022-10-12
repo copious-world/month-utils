@@ -1,9 +1,12 @@
 {
   "name": "month-utils",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "Time slot scheduling classes relative to months as storage units",
   "module": "./dist/index.mjs",
   "main": "index.js",
+  "exports": {
+    "import": "./dist/index.mjs"
+  },
   "directories": {
     "lib": "lib",
     "test": "test"
